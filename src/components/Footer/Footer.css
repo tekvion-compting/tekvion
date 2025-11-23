@@ -62,7 +62,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--text-light);
+  color: var(--primary);
 }
 
 .footer-email {

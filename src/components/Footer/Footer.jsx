@@ -21,9 +21,9 @@ export default function Footer() {
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#vision-mission">Mission and Vission</a></li>
           </ul>
         </div>
 

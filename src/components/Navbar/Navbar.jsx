@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../../assets/tekvion-logo.svg";
 import WorkWithUsButton from "../Hero/WorkWithUs";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,7 +54,14 @@ export default function Navbar() {
         <div className="container navbar-content">
 
           <div className="navbar-left">
-            <img src={logo} alt="Tekvion logo" className="navbar-logo" />
+            <Link
+              to="/"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <img src={logo} alt="Tekvion logo" className="navbar-logo" />
+            </Link>
           </div>
 
           <div className="right-side">
