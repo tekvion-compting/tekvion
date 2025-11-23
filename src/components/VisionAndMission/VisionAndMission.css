@@ -1,0 +1,147 @@
+.vm-section {
+  background: var(--background);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-section::before,
+.vm-section::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 300px;
+  filter: blur(95px);
+  opacity: 0.16;
+  border-radius: 50%;
+}
+
+.vm-section::before {
+  background: var(--primary);
+  top: -80px;
+  left: -120px;
+}
+
+.vm-section::after {
+  background: var(--secondary);
+  bottom: -100px;
+  right: -120px;
+}
+
+.vm-container {
+  width: min(92%, 1100px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.vm-block {
+  padding: 32px 36px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 35px rgba(12, 20, 30, 0.08);
+  background: #fff;
+}
+
+.vm-orange {
+  border-left: 6px solid var(--primary);
+}
+
+.vm-blue {
+  border-left: 6px solid var(--secondary);
+}
+
+.vm-title {
+  font-size: 32px;
+  margin: 0 0 12px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.gradient-orange {
+  background: linear-gradient(90deg, var(--primary), #ff9f5b);
+  background-clip: text;             
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-blue {
+  background: linear-gradient(90deg, var(--secondary), #74c4ff);
+  background-clip: text;            
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
+}
+
+.vm-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  opacity: 0.95;
+  max-width: 900px;
+}
+
+.values-heading {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin: 60px 0 30px;
+  color: var(--text-dark);
+}
+
+.vm-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  justify-items: center;
+}
+
+.vm-card {
+  background: #f8f9fc;
+  padding: 28px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(12, 20, 30, 0.06);
+  transition: 0.28s ease;
+  text-align: center;
+}
+
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(12, 20, 30, 0.1);
+}
+
+.vm-card h4 {
+  font-size: 20px;
+  margin: 10px 0 8px;
+  font-weight: 700;
+}
+
+.vm-card p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.vm-icon {
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .vm-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .vm-values {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-title {
+    font-size: 26px;
+  }
+
+  .vm-block {
+    padding: 26px;
+  }
+}

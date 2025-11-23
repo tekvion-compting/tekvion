@@ -62,8 +62,9 @@ export default function Navbar() {
               role="navigation"
               aria-label="Main Navigation"
             >
-              <a href="#about" className="nav-link" onClick={handleNavClick}>About</a>
               <a href="#services" className="nav-link" onClick={handleNavClick}>Services</a>
+              <a href="#about" className="nav-link" onClick={handleNavClick}>About</a>
+              <a href="#vision-mission" className="nav-link" onClick={handleNavClick}>Mission and Vision</a>
               <a href="#contact" className="nav-link" onClick={handleNavClick}>Contact us</a>
             </nav>
 
