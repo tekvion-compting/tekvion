@@ -4,6 +4,9 @@
 /* ============================
    Global Reset + Color System
    ============================ */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;

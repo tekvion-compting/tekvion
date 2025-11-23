@@ -62,7 +62,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <p className="services-tag">OUR EXPERTISE</p>
       <h2 className="services-title">Services</h2>
 

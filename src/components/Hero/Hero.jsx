@@ -2,6 +2,7 @@ import "./Hero.css";
 import heroLogo from "../../assets/tekvion-image.png";
 import heroBg from "../../assets/hero-bg.png";
 import heroCurve from "../../assets/hero-curve.png";
+import WorkWithUsButton from "./WorkWithUs";
 
 export default function Hero() {
   return (
@@ -22,9 +23,7 @@ export default function Hero() {
               and digital innovation.
             </p>
 
-            <a href="#get-started" className="hero-btn">
-              Work With Us
-            </a>
+            <WorkWithUsButton />
           </div>
 
           <div className="hero-right">

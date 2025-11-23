@@ -57,10 +57,10 @@
   padding: 14px 28px;
   background: var(--primary);
   color: white;
-  border-radius: 30px;
+  border-radius: 20px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(255, 122, 46, 0.18);
+  border: none;
 }
 
 .hero-image {

@@ -64,7 +64,8 @@
 
 @media (max-width: 600px) {
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
   }
 
   .service-icon svg {
@@ -72,3 +73,10 @@
     height: 55px;
   }
 }
+
+@media (max-width: 350px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

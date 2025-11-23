@@ -49,7 +49,7 @@
   height: 42px;
   object-fit: contain;
 
-  transform: scale(2.8);
+  transform: scale(2.5);
   transform-origin: center;
 }
 
@@ -80,12 +80,6 @@
   font-weight: 600;
 }
 
-.btn-cta {
-  background: var(--primary);
-  color: var(--text-light);
-  box-shadow: 0 8px 20px rgba(255, 122, 46, 0.18);
-}
-
 .right-side {
   display: flex;
   align-items: center;
@@ -94,7 +88,7 @@
 
 /* Hide desktop CTA on mobile */
 @media (max-width: 767px) {
-  .btn-cta {
+  .right-side .hero-btn {
     display: none !important;
   }
 }
