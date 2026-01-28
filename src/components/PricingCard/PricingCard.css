@@ -1,0 +1,110 @@
+.pricing-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e6eefb;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Popular card */
+.pricing-card.popular {
+  border: 2px solid var(--secondary);
+}
+
+/* Badge */
+.pricing-card-badge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Icon */
+.pricing-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #eaf1ff;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Title */
+.pricing-card-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Description */
+.pricing-card-description {
+  font-size: 14px;
+  color: #5a6b85;
+  line-height: 1.5;
+}
+
+/* Price */
+.pricing-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 8px 0 24px;
+}
+
+.pricing-card-price .amount {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.pricing-card-price .suffix {
+  font-size: 14px;
+  color: #6b7c93;
+}
+
+/* Sections */
+.pricing-card-section {
+  margin-top: 16px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card li {
+  font-size: 14px;
+  color: #344563;
+  margin-bottom: 10px;
+}
+
+/* Excluded */
+.pricing-card-section.excluded li {
+  color: #8a9ab3;
+}
+
+.pricing-card-price .from {
+  font-size: 14px;
+  color: #6b7c93;
+  margin-right: 6px;
+}
+
+

@@ -1,0 +1,14 @@
+.confidential-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  font-size: clamp(64px, 12vw, 140px);
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 0.04);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  white-space: nowrap;
+}

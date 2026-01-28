@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /p/9f3c7a4e2b1c
 
 Sitemap: https://tekvion.co.za/sitemap.xml
+
